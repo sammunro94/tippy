@@ -6,6 +6,7 @@ import {
   ElementRef,
   ViewChild,
 } from '@angular/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import tippy from 'tippy.js';
 
 interface MenuItem {
@@ -19,7 +20,7 @@ interface MenuItem {
   templateUrl: './renderer.component.html',
   styleUrls: ['./renderer.component.scss'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatTooltipModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RowActionsCellRendererComponent implements AfterViewInit {

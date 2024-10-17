@@ -2,9 +2,12 @@
   more_vert
 </div>
 
+<div matTooltip="Tooltip!">Hover me</div>
+
 <div #content class="container">
   <div (mouseleave)="togglePopup()" *ngIf="isOpen" class="menu-container">
     <button
+      matTooltip="Info about the action"
       (click)="menuItem.callback()"
       class="item"
       *ngFor="let menuItem of menuItems"

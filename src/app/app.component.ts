@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatTooltip } from '@angular/material/tooltip';
 import { AgGridAngular } from 'ag-grid-angular'; // Angular Data Grid Componen
 import { ColDef } from 'ag-grid-community'; // Column Definition Type Interface
 import { RowActionsCellRendererComponent } from './renderer.component';
@@ -6,7 +7,7 @@ import { RowActionsCellRendererComponent } from './renderer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [AgGridAngular],
+  imports: [AgGridAngular, MatTooltip],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
