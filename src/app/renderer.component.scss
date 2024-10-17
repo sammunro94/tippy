@@ -1,0 +1,52 @@
+:host {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.container {
+    background-color: black;
+}
+
+.material-icons {
+    color: grey;
+    font-size: 20px;
+
+    .menu-container {
+        background: black;
+        border-radius: 4px;
+
+        padding: 8px 0
+    }
+
+    .item:hover {
+
+        cursor: pointer;
+    }
+
+    .item {
+        align-items: center;
+        background-color: white;
+        border: unset;
+        color: black;
+        display: flex;
+        font-family: 'Roboto';
+        font-style: normal;
+        padding: 8;
+        width: 268px;
+
+        p {
+            font-size: 16px;
+            margin-bottom: 0;
+            margin-left: 20px
+        }
+    }
+}

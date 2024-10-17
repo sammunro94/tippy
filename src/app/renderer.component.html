@@ -1,0 +1,16 @@
+<div #trigger (mouseenter)="togglePopup()" class="material-icons">
+  more_vert
+</div>
+
+<div #content class="container">
+  <div (mouseleave)="togglePopup()" *ngIf="isOpen" class="menu-container">
+    <button
+      (click)="menuItem.callback()"
+      class="item"
+      *ngFor="let menuItem of menuItems"
+    >
+      <div class="material-icons">{{ menuItem.icon }}</div>
+      <p>{{ menuItem.text }}</p>
+    </button>
+  </div>
+</div>
